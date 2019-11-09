@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -49,11 +51,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, final int i, long id) {
         final File folder = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
         File file = new File(folder, "company.txt");
+        File file2 = new File(folder, "country.txt");
+        File file3 = new File(folder, "ceo.txt");
+
         try {
             FileOutputStream fos = new FileOutputStream(file);
             String choice = companies[i];
             fos.write(choice.getBytes());
-            Toast.makeText(this, companies[i], Toast.LENGTH_LONG).show();
+
+            FileOutputStream fos2 = new FileOutputStream(file2);
+            String choice2 = countries[i];
+            fos2.write(choice2.getBytes());
+
+            FileOutputStream fos3 = new FileOutputStream(file3);
+            String choice3 = ceonames[i];
+            fos3.write(choice3.getBytes());
+
+            //Toast.makeText(this, companies[i], Toast.LENGTH_LONG).show();
             final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             dialog.setIcon(logo[i]);
             dialog.setTitle(companies[i]);
@@ -62,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
-                    Toast.makeText(MainActivity.this, companies[i] + " | " + countries[i], Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, companies[i] + " | " + countries[i] + " | " + ceonames[i], Toast.LENGTH_LONG).show();
                 }
             });
 
