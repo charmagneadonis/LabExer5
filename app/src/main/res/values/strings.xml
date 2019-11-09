@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">TOP GLOBAL COMPANIES</string>
+
+    <string-array name="topCompanies">
+        <item>ICBC</item>
+        <item>JPMorgan Chase</item>
+        <item>China Construction Bank</item>
+        <item>Agricultural Bank of China</item>
+        <item>Bank of America</item>
+        <item>Apple</item>
+        <item>Ping An Insurance Group</item>
+        <item>Bank of China</item>
+        <item>Royal Dutch Shell</item>
+        <item>Wells Fargo</item>
+        <item>ExxonMobil</item>
+        <item>AT &amp; T</item>
+        <item>Samsung Electronics</item>
+        <item>Citigroup</item>
+    </string-array>
+
+    <string-array name="countryNames">
+        <item>Country: China</item>
+        <item>Country: United States</item>
+        <item>Country: China</item>
+        <item>Country: China</item>
+        <item>Country: United States</item>
+        <item>Country: United States</item>
+        <item>Country: China</item>
+        <item>Country: China</item>
+        <item>Country: Netherlands</item>
+        <item>Country: United States</item>
+        <item>Country: United States</item>
+        <item>Country: United States</item>
+        <item>Country: South Korea</item>
+        <item>Country: United States</item>
+    </string-array>
+
+    <string-array name="industryNames">
+        <item>Industry: Major Banks</item>
+        <item>Industry: Major Banks</item>
+        <item>Industry: Major Banks</item>
+        <item>Industry: Regional Banks</item>
+        <item>Industry: Major Banks</item>
+        <item>Industry: Computer Hardware</item>
+        <item>Industry: Diversified Insurance</item>
+        <item>Industry: Major Banks</item>
+        <item>Industry: Oil &amp; Gas Operations</item>
+        <item>Industry: Major Banks</item>
+        <item>Industry: Oil &amp;  Gas Operations</item>
+        <item>Industry: Telecommunications services</item>
+        <item>Industry: Semiconductors</item>
+        <item>Industry: Major Banks</item>
+    </string-array>
+
+    <string-array name="ceoNames">
+        <item>CEO: Shu Gu</item>
+        <item>CEO: Jamie Dimon</item>
+        <item>CEO: Wang Zuji</item>
+        <item>CEO: Huan Zhao</item>
+        <item>CEO: Brian T. Moynihan</item>
+        <item>CEO: Tim Cook</item>
+        <item>CEO: Ma Mingzhe</item>
+        <item>CEO: Chen Siqing</item>
+        <item>CEO: Bernardus Cornelis Margriet van Beurden</item>
+        <item>CEO: Timothy Allen Sloan</item>
+        <item>CEO: Darren W. W. Woods</item>
+        <item>CEO: Randall L. L. Stephenson</item>
+        <item>CEO: Hyun-Suk Kim</item>
+        <item>CEO: Michael L. Louis Corbat</item>
+    </string-array>
+
+    <string-array name="companyInfo">
+        <item>Industrial &amp; Commercial Bank of China Ltd. engages in the provision of commercial banking and financial services. </item>
+        <item>JPMorgan Chase &amp; Co. is a financial holding company, which provides financial and investment banking services. </item>
+        <item>China Construction Bank Corp. engages in the provision of financial and banking services.</item>
+        <item>Agricultural Bank of China engages in the provision of international commercial banking and financial services. </item>
+        <item>Bank of America Corp. is a bank and financial holding company, which engages in the provision of banking and nonbank financial services. </item>
+        <item>Apple, Inc. engages in the design, manufacture, and marketing of mobile communication, media devices, personal computers, and portable digital music players. </item>
+        <item>Ping An Insurance (Group) Co. of China Ltd. engages in the provision of financial products and services.</item>
+        <item>Bank of China Ltd. engages in the provision of banking and related financial services such as commercial and investment banking, and insurance and investment services. </item>
+        <item>Royal Dutch Shell Plc engages in the oil and natural gas production.</item>
+        <item>Wells Fargo &amp; Co. is a bank holding company that engages in the provision of banking, insurance, investments, mortgage, and consumer and commercial finance. </item>
+        <item>Exxon Mobil Corp. engages in the exploration, development, and distribution of oil, gas, and petroleum products.</item>
+        <item>AT&amp;T, Inc. is a holding company, which engages in the provision of telecommunications and digital entertainment services.</item>
+        <item>Samsung Electronics Co., Ltd. engages in the manufacturing and selling of electronics and computer peripherals</item>
+        <item>Citigroup, Inc. is a global financial services holding company specializes in banking and financial solutions. </item>
+    </string-array>
+</resources>
