@@ -76,7 +76,36 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
-                    Toast.makeText(MainActivity.this, companies[i] + " | " + countries[i] + " | " + ceonames[i], Toast.LENGTH_LONG).show();
+                    //Toast.makeText(MainActivity.this, companies[i] + " | " + countries[i] + " | " + ceonames[i], Toast.LENGTH_LONG).show();
+                    try {
+                        FileInputStream fin;
+                        fin = new FileInputStream(new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) + "/company.txt"));
+                        int i;
+                        String str = "";
+                        while ((i = fin.read()) != -1) {
+                            str += Character.toString((char) i);
+                        }
+                        fin.close();
+
+                        fin = new FileInputStream(new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) + "/country.txt"));
+                        String str2 = "";
+                        while ((i = fin.read()) != -1) {
+                            str2 += Character.toString((char) i);
+                        }
+                        fin.close();
+
+                        fin = new FileInputStream(new File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS) + "/ceo.txt"));
+                        String str3 = "";
+                        while ((i = fin.read()) != -1) {
+                            str3 += Character.toString((char) i);
+                        }
+                        fin.close();
+                        Toast.makeText(MainActivity.this, str + " | " + str2 + " | " + str3, Toast.LENGTH_LONG).show();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             });
 
